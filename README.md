@@ -125,6 +125,7 @@ Inheritance is one of the most crucial concepts in object-oriented programming, 
 
 Inheritance is a powerful mechanism that means when you write a class you only have to specify how that class is different from some other class,
 
+![inheritance](https://github.com/GryphusOneSeven/WorkshopJavaOOP/blob/readme/inheritance.png?raw=true)
 
 Subclasses inherit all the methods and variables from their superclasses—that is, in any particular
 class, if the superclass defines behavior that your class needs, you don’t have to redefine it or copy
