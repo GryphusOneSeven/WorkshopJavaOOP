@@ -119,7 +119,7 @@ I'm putting the pedal to the metal! (Let's hope the car doesnt explode)
 
 To make sure that you understood how to create object, you can do something similar with an `Animal` class.
 
-### EX2 : Inheritance
+### EX2 : Inheritance and overriding
 
 Inheritance is one of the most crucial concepts in object-oriented programming, and it has a very direct effect on how you design and write your Java classes.
 
@@ -127,7 +127,51 @@ Inheritance is a powerful mechanism that means when you write a class you only h
 
 ![inheritance](https://github.com/GryphusOneSeven/WorkshopJavaOOP/blob/readme/inheritance.png?raw=true)
 
-Subclasses inherit all the methods and variables from their superclasses—that is, in any particular
-class, if the superclass defines behavior that your class needs, you don’t have to redefine it or copy
-that code from some other class.
+Subclasses inherit all the methods and variables from their superclasses.
+If the superclass defines behavior that your class needs, you don’t have to redefine it or copy that code from some other class.
 
+**Update the vehicle class**
+
+Add these attributes to the class 
+
+    - Weight
+    - Wheels
+
+**Create the class Truck, Car, Motorcycle and make them inherit from the Vehicle Class**
+
+To make a class inherit from another one, we use the keyword `extends`.
+
+**Override each methods of the vehicle class**
+
+Overriding is a feature that allows a subclass to provide a specific implementation of a method that is already provided by one of its super-classes.
+When a method in a subclass has the same name, the same parameters or signature, and the same return type as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+
+We can also call the superclass' method `super()` method and give it the necessary parameters
+
+For each classes' constructor, we can use the superclass' constructor and then set the remaining attributes;
+
+For the `Describe` method, call the superclass method and print the values of the remaining attributes;
+
+Now when we create an instance of all these classes we should have something like this:
+
+
+```text
+I'm a Volkswagen Scirocco made in 2008.
+I'm putting the pedal to the metal! (Let's hope the car doesnt explode)
+
+I'm a Ferrari Testarossa made in 1984.
+I'm a Car, I weight 1656 kg and I have 4 wheels.
+
+I'm a Scania Frostfire made in 2022.
+I'm a Truck, I weight 6000 kg and I have 6 wheels.
+
+I'm a Kawazaki Ninja made in 2013.
+I'm a Motorcycle, I weight 170 kg and I have 2 wheels.
+```
+
+This type of inheritance is called **Simple Inheritance**, it means that a class can have only one superclass. 
+
+In other object-oriented programming languages, such as C++ and Smalltalk, classes can have
+more than one superclass, and they inherit combined variables and methods from all those
+classes. This is called multiple inheritance.
+Java makes inheritance simpler by being only singly inherited.
