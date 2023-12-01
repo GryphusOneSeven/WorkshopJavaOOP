@@ -1,5 +1,8 @@
 # workshopJavaOOP
 
+Before you start the workshop, you need to create a git repository. It must be in public so that I can check your work.
+You will have to push your code each time you finish an exercice.
+
 ## What is Java and what is it used for
 
 Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
@@ -21,7 +24,7 @@ Basic concepts of OOPs are:
 * Encapsulation
 * Abstraction
 
-This workshop will not cover all of theses concepts, but feel free to check them out after this workshop !
+This workshop will give you an overview of theses concepts, feel free to check them out in details after this workshop !
 
 *Learn more about Java features at : https://www.javatpoint.com/features-of-java*
 
@@ -34,8 +37,6 @@ First check if java is installed
 ```bash
 java -version
 ```
-
-if an error occured, check the `install.md` file
 
 Now that we have the JDK (Java Development Kit; required only for development, coding) and JRE (Java Runtime Environment; required to run Java code and applications) installed, we can now start programming in java.
 
@@ -250,3 +251,10 @@ The `get` method returns the variable value, and the `set` method sets the value
 Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
 
 **Create a getter and setter for each variables**
+
+
+And there you go. Now you know the basic features of Object Oriented Programming in Java.
+
+Now, to put everything you've learn in practice, you can now follow my other workshop on creating a mini game using the JavaFX Library here :
+
+https://github.com/GryphusOneSeven/workshopJavaApp
