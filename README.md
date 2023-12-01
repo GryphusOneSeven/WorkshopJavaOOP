@@ -18,8 +18,8 @@ Basic concepts of OOPs are:
 * Class
 * Inheritance
 * Polymorphism
-* Abstraction
 * Encapsulation
+* Abstraction
 
 This workshop will not cover all of theses concepts, but feel free to check them out after this workshop !
 
@@ -156,8 +156,13 @@ Now when we create an instance of all these classes we should have something lik
 
 
 ```text
+--------------------------------
+# Exercice 1 output
+
 I'm a Volkswagen Scirocco made in 2008.
 I'm putting the pedal to the metal! (Let's hope the car doesnt explode)
+
+--------------------------------
 
 I'm a Ferrari Testarossa made in 1984.
 I'm a Car, I weight 1656 kg and I have 4 wheels.
@@ -175,3 +180,73 @@ In other object-oriented programming languages, such as C++ and Smalltalk, class
 more than one superclass, and they inherit combined variables and methods from all those
 classes. This is called multiple inheritance.
 Java makes inheritance simpler by being only singly inherited.
+
+
+### EX3 : Polymorphism / Method Overloading
+In Java, Method Overloading allows different methods to have the same name, but different signatures where the signature can differ by the number of parameters or type of parameters, or a mixture of both.
+
+Method overloading in Java is also known as Static Polymorphism, or Early binding.
+In Method overloading compared to the parent argument, the child argument will get the highest priority.
+
+In your sub-classes, overload the method **Accelerate** by adding a **String** that correspond to an onomatopoeia of the sound of the vehicle.
+You can also do something siliar with the **Brake** method
+
+When you call these methods, you should have an input similar to this :
+
+```text
+--------------------------------
+# Exercice 1 output
+
+I'm a Volkswagen Scirocco made in 2008.
+I'm putting the pedal to the metal! (Let's hope the car doesnt explode)
+
+--------------------------------
+# Exercice 2 output
+
+I'm a Ferrari Testarossa made in 1984.
+I'm a Car, I weight 1656 kg and I have 4 wheels.
+
+I'm a Scania Frostfire made in 2022.
+I'm a Truck, I weight 6000 kg and I have 6 wheels.
+
+I'm a Kawazaki Ninja made in 2013.
+I'm a Motorcycle, I weight 170 kg and I have 2 wheels.
+
+--------------------------------
+
+My Ferrari goes like this : VROOOooooooom !
+
+My Scania goes like this : broooooaaaaaAAAAAAARRRR !
+
+My Kawazaki goes like this : vrrrrRRRRRRRrrrrr !
+
+```
+
+### EX4 : Encapsulation
+
+Now you may be asking : "Why do we put 'public' in front of each class method". This is called an **Access modifier**
+
+The access modifiers in Java specifies the accessibility or scope of a method, constructor, or class.
+We can change the access level of fields, constructors, methods, and class by applying the access modifier on it. 
+
+There are four types of Java access modifiers:
+
+    - Private: The access level of a private modifier is only within the class. It cannot be accessed from outside the class.
+    - Default: The access level of a default modifier is only within the package. It cannot be accessed from outside the package. If you do not specify any access level, it will be the default.
+    - Protected: The access level of a protected modifier is within the package and outside the package through child class. If you do not make the child class, it cannot be accessed from outside the package.
+    - Public: The access level of a public modifier is everywhere. It can be accessed from within the class, outside the class, within the package and outside the package.
+    
+There are also non-access modifiers, such as static, abstract, synchronized, native, volatile, transient, etc...
+You can check theses out after this workshop
+
+In general, class variables are private and can only be accessed in the class itself.
+
+**You have to modify the accessibility of all variables of each class**
+
+But now you may be asking : "But now, how can I access each data of theses classes?". We can use **getters** and **setters**
+
+The `get` method returns the variable value, and the `set` method sets the value.
+
+Syntax for both is that they start with either get or set, followed by the name of the variable, with the first letter in upper case:
+
+**Create a getter and setter for each variables**
